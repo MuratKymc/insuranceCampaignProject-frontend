@@ -1,0 +1,30 @@
+<div class="col-md-6 offset-md-3">
+
+    <h3> Create Campaign </h3>
+
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group mt-4">
+            <label> Campaigns Advert Title </label>
+            <input type="text" class="form-control mt-3" id="campaignsAdvertTitle" [(ngModel)]="campaign.campaignsAdvertTitle"
+                name="campaignsAdvertTitle">
+        </div>
+
+        <div class="form-group">
+            <label> Campaigns Details </label>
+            <input type="text" class="form-control mt-3" id="campaignsDetails" [(ngModel)]="campaign.campaignsDetails" name="campaignsDetails">
+        </div>
+
+        <div class="form-group">
+            <label> Campaigns Category </label>
+            <input type="text" class="form-control mt-3" id="campaignCategory" [(ngModel)]="campaign.campaignCategory" name="campaignCategory">
+        </div>
+
+
+
+        <button class="btn btn-success mt-3" type="submit">Submit</button>
+
+
+    </form>
+
+</div>

@@ -1,0 +1,34 @@
+<h2>Campaign List</h2>
+<table class="table table-striped table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Advert Title</th>
+            <th>Details</th>
+            <th>Category</th>
+            <th>Status</th>
+            <th></th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let campaign of campaigns">
+
+            <td> {{ campaign.id }}</td>
+            <td> {{ campaign.campaignsAdvertTitle }}</td>
+            <td> {{ campaign.campaignsDetails }}</td>
+            <td> {{ campaign.campaignCategory }}</td>
+            <td> {{ campaign.campaignsStatus }}</td>
+
+            <td>
+
+                <div>
+                    <button type="button" (click)="campaignActions(campaign.id)" class="btn btn-info btn-sm">
+                        Action</button>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+
+</table>

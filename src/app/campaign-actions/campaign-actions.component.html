@@ -1,0 +1,44 @@
+<h2>Campaign Actions</h2>
+
+<table class="table table-striped table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Advert Title</th>
+            <th>Details</th>
+            <th>Category</th>
+            <th>Status</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+
+            <td> {{ campaign.id }}</td>
+            <td> {{ campaign.campaignsAdvertTitle }}</td>
+            <td> {{ campaign.campaignsDetails }}</td>
+            <td> {{ campaign.campaignCategory }}</td>
+            <td> {{ campaign.campaignsStatus }}</td>
+
+
+
+        </tr>
+    </tbody>
+
+
+
+</table>
+
+<div class="container center-block">
+
+    <button type="button" (click)="makeCampaignActive()" class="btn btn-success">
+        Activate</button>
+
+    <button type="button" (click)="makeCampaignDeactive()" class="btn btn-warning ms-4">
+        Deactivate</button>
+
+    <button type="button" (click)="deleteCampaign()" class="btn btn-danger ms-4">
+        Delete</button>
+
+</div>
