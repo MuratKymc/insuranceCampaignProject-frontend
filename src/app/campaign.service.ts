@@ -44,4 +44,8 @@ export class CampaignService {
     return this.httpClient.delete(`${this.baseURL}/${id}`)
   }
 
+  getCampaignsStatus(): Observable<Object[][]>{
+    return this.httpClient.get<Object[][]>(`${this.baseURL}/statistics`)
+  }
+
 }
