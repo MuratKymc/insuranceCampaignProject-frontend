@@ -1,13 +1,83 @@
+<div class="container ">
+    <div class="row-12 d-flex justify-content-center">
+        <div class="col-8  bg-dark bg-opacity-10">
+            <div class="m-3">
+
+                <form #form="ngForm" (ngSubmit)="onSubmit()">
+
+                    <div class="bg-dark bg-opacity-75 text-white m-2 p-2 mx-auto d-flex justify-content-center">
+                        <h4> Create Campaign </h4>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label class="mb-1"> Campaigns Advert Title: </label>
+                        <input type="text" class="form-control" required minlength="10" maxlength="50"
+                            pattern="^[a-zA-Z0-9ğüşıöçĞÜŞİÖÇ\s]*$" [(ngModel)]="campaign.campaignsAdvertTitle" name="campaignsAdvertTitle"
+                            #campaignsAdvertTitle="ngModel">
+                        <div class="alert alert-danger"
+                            *ngIf="!campaignsAdvertTitle.valid && campaignsAdvertTitle.touched">
+                            <p *ngFor=" let error of getValidationErrors(campaignsAdvertTitle, 10)">
+                                {{error}}
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label class="mb-1"> Campaigns Details: </label>
+                        <textarea type="text" class="form-control" id="campaignsDetails" required minlength="20"
+                            maxlength="200" [(ngModel)]="campaign.campaignsDetails" name="campaignsDetails"
+                            #campaignsDetails="ngModel"></textarea>
+
+                        <div class="alert alert-danger" *ngIf="!campaignsDetails.valid && campaignsDetails.touched">
+                            <p *ngFor=" let error of getValidationErrors(campaignsDetails, 20)">
+                                {{error}}
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-3">
+
+                        <label class="mb-1"> Campaigns Category: </label>
+
+                        <select required class="form-select" type="text" aria-label="Default select example"  name="campaignCategory" [(ngModel)]="campaign.campaignCategory">
+                            <option value="Tamamlayıcı Sağlık Sigortası">Tamamlayıcı Sağlık Sigortası</option>
+                            <option value="Özel Sağlık Sigortası">Özel Sağlık Sigortası</option>
+                            <option value="Hayat Sigortası">Hayat Sigortası</option>
+                            <option value="Diğer">Diğer</option>
+                          </select>
+
+                    </div>
+
+
+
+
+                    <button class="btn btn-success mt-3" [disabled]="form.invalid" type="submit">Save</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!--
 <div class="col-md-6 offset-md-3">
 
-    <h3> Create Campaign </h3>
+    
 
-    <form (ngSubmit)="onSubmit()">
+    <form #form="ngForm" (ngSubmit)="onSubmit()">
 
         <div class="form-group mt-4">
             <label> Campaigns Advert Title </label>
-            <input type="text" class="form-control mt-3" id="campaignsAdvertTitle" [(ngModel)]="campaign.campaignsAdvertTitle"
-                name="campaignsAdvertTitle">
+            <input required minlength="10" maxlength="50" pattern="" type="text" class="form-control mt-3" id="campaignsAdvertTitle" [(ngModel)]="campaign.campaignsAdvertTitle"
+                name="campaignsAdvertTitle" #name="ngModel">
         </div>
 
         <div class="form-group">
@@ -27,4 +97,4 @@
 
     </form>
 
-</div>
+</div>-->

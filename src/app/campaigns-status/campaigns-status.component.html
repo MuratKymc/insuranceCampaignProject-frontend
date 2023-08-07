@@ -1,11 +1,49 @@
+<div class="container ">
+  <div class="row-12 d-flex justify-content-center">
+    <div class="col-6  bg-dark bg-opacity-10">
+      <div class="m-3">
 
 
+        <div *ngIf="campaignsStatus">
+          <h3 class="bg-dark bg-opacity-75 text-white d-flex justify-content-center p-2">Campaigns Status</h3>
 
-<div *ngIf="campaignsStatus" class="col-md-6 offset-md-3">
-    <h2>Campaign Statistics</h2>
-    <p>Aktif: {{ campaignsStatus.Aktif }}</p>
-    <p>Deaktif: {{ campaignsStatus.Deaktif }}</p>
-    <p>Onay Bekliyor: {{ campaignsStatus['Onay Bekliyor'] }}</p>
-    <p>Mukerrer: {{ campaignsStatus.Mukerrer }}</p>
+
+          <table class="table table-striped table-hover table-bordered">
+
+            <thead class="border-black">
+              <tr>
+                <th>Category</th>
+                <th>Count</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Aktif</td>
+                <td>{{ campaignsStatus.Aktif }}</td>
+              </tr>
+
+              <tr>
+                <td>Deaktif</td>
+                <td>{{ campaignsStatus.Deaktif }}</td>
+              </tr>
+
+              <tr>
+                <td>Onay Bekliyor</td>
+                <td>{{ campaignsStatus['Onay Bekliyor'] }}</td>
+              </tr>
+
+              <tr>
+                <td>Mükerrer</td>
+                <td>{{ campaignsStatus.Mukerrer }}</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
-
+</div>

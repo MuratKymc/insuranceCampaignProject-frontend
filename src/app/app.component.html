@@ -1,27 +1,33 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-  <ul class="navbar-nav">
+
+  <a class="navbar-brand fs-3 p-2"> {{ title }}</a>
+
+  <div class="d-flex justify-content-end">
+
+    <ul class="navbar-nav mt-2">
+
       <li class="nav-item">
-          <a routerLink="campaigns" routerLinkActive="active" class="nav-link">Campaign List</a>
+        <a routerLink="campaigns" routerLinkActive="active" class="nav-link">Campaign List</a>
       </li>
 
       <li class="nav-item">
-          <a routerLink="create-campaign" routerLinkActive="active" class="nav-link">Add Campaign</a>
+        <a routerLink="create-campaign" routerLinkActive="active" class="nav-link">Create New Campaign</a>
       </li>
 
       <li class="nav-item">
         <a routerLink="campaigns-status" routerLinkActive="active" class="nav-link">Campaigns Status</a>
-    </li>
+      </li>
 
-  </ul>
+    </ul>
+  </div>
 </nav>
 
 
-<h1 class="text-center mt-4 mb-4"> {{ title }}</h1>
 
-<div class="container">
+
+<div class="container mt-4">
 
   <router-outlet></router-outlet>
-  
-</div>
 
+</div>

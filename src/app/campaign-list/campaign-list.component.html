@@ -1,34 +1,46 @@
-<h2>Campaign List</h2>
-<table class="table table-striped table-hover table-bordered">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Advert Title</th>
-            <th>Details</th>
-            <th>Category</th>
-            <th>Status</th>
-            <th></th>
+<div class="container ">
+    <div class="row">
+        <div class="col-12">
+            <div class="m-2">
 
-        </tr>
-    </thead>
+                <h3 class="bg-dark bg-opacity-75 text-white d-flex justify-content-center p-2">Campaign List</h3>
 
-    <tbody>
-        <tr *ngFor="let campaign of campaigns">
+                <table class="table table-striped table-hover table-bordered ">
+                    <thead>
+                        <tr class="border-black">
+                            <th>ID</th>
+                            <th>Advert Title</th>
+                            <th>Details</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th></th>
 
-            <td> {{ campaign.id }}</td>
-            <td> {{ campaign.campaignsAdvertTitle }}</td>
-            <td> {{ campaign.campaignsDetails }}</td>
-            <td> {{ campaign.campaignCategory }}</td>
-            <td> {{ campaign.campaignsStatus }}</td>
+                        </tr>
+                    </thead>
 
-            <td>
+                    <tbody>
+                        <tr *ngFor="let campaign of campaigns">
 
-                <div>
-                    <button type="button" (click)="campaignActions(campaign.id)" class="btn btn-info btn-sm">
-                        Action</button>
-                </div>
-            </td>
-        </tr>
-    </tbody>
+                            <td> {{ campaign.id }}</td>
+                            <td> {{ campaign.campaignsAdvertTitle }}</td>
+                            <td> {{ campaign.campaignsDetails }}</td>
+                            <td> {{ campaign.campaignCategory }}</td>
+                            <td> {{ campaign.campaignsStatus }}</td>
 
-</table>
+                            <td>
+
+                                <div>
+                                    <button type="button" (click)="campaignActions(campaign.id)"
+                                        class="btn btn-info btn-sm">
+                                        Update</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
