@@ -46,7 +46,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://github.com/MuratKymc/insuranceCampaignProject-frontend/assets/99142274/1777a3aa-3c59-4fc0-9855-48587a26db76)
 
 
-
+###  MySql Database
+![image](https://github.com/MuratKymc/insuranceCampaignProject-frontend/assets/99142274/7c74ee4c-6ade-4057-8234-a20c532f7f37)
 
 
 
