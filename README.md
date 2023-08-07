@@ -58,5 +58,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![update](https://github.com/MuratKymc/insuranceCampaignProject-frontend/assets/99142274/b61283f7-4d02-4238-887f-a38b46c76325)
 
 
+## Example Video
+
+
+https://github.com/MuratKymc/insuranceCampaignProject-frontend/assets/99142274/39d30b39-eb3b-48bb-afff-c81e2c88584a
+
+
+
+
 
 
