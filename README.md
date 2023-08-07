@@ -51,9 +51,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
+###  Example GIF
 
+![New-Campaign](https://github.com/MuratKymc/insuranceCampaignProject-frontend/assets/99142274/82236bc9-2822-437a-b99d-4c65ccb681e5)
 
-
+![update](https://github.com/MuratKymc/insuranceCampaignProject-frontend/assets/99142274/b61283f7-4d02-4238-887f-a38b46c76325)
 
 
 
